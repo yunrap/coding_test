@@ -1,7 +1,3 @@
-// 풀이과정
-// 변수 : 새로운배열 k, 정렬후 자리수선택 배열 d
-// 필요 : 1반복분(commands 개수),  정렬(버블)
-
 function solution(array, commands) {
   var reArray = [];
   var answer = [];
@@ -12,6 +8,7 @@ function solution(array, commands) {
     for (fromVar; fromVar <= toVar; fromVar++) {
       reArray.push(array[fromVar - 1]);
     }
+    console.log(reArray + "데이터확인");
 
     // 버블정렬
     for (var j = 0; j < reArray.length; j++) {
@@ -23,12 +20,12 @@ function solution(array, commands) {
         }
       }
     }
-    // console.log(reArray + "정렬후배열");
+    console.log(reArray + "정렬후배열");
 
     answer.push(reArray[commands[i][2] - 1]);
     reArray = [];
   }
-  // console.log(answer + "정답!");
+  console.log(answer + "정답!");
   return answer;
 }
 
