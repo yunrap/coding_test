@@ -120,3 +120,8 @@ console.log(sports === sportsAlias);
 sports.unshift("hello");
 console.log(sports + "원본배열");
 console.log(sportsAlias + "참조배열");
+
+// --> 배열을 새문자열로만들기
+var elements = ["fire", "air", "water"];
+console.log(elements.join(""));
+console.log(elements.join("-"));
