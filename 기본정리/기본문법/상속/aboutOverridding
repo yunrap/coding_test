@@ -1,0 +1,16 @@
+// javascript 메서드가없다. 모든함수를 속성의형태로 객체에추가가능
+// 기존기능을 확장할때 사용할수있다.
+let animal = {
+  eats: true,
+  walk() {
+    console.log("동물이 걷습니다");
+  },
+};
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
+
+console.log(rabbit.eats); // true
+console.log(rabbit.jumps); // true
+rabbit.walk();
