@@ -9,18 +9,15 @@ public class CubeGame1 {
 
         if (aDoubleCheck == 1 && bDoubleCheck == 1) {
             answer = (a * a) + (b * b);
-        } else if (aDoubleCheck == 1 || bDoubleCheck == 1){
+        } else if (aDoubleCheck == 1 || bDoubleCheck == 1) {
             answer = 2 * (a + b);
-        } else{
+        } else {
             answer = Math.abs(a - b);
         }
 
         return answer;
     }
 }
-
-
-
 
 
 // a와 b가 홀수라면 a2 + b2 결과를 담는다   a /2 != 0 && b / 2 != 0
